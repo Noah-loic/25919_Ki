@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Noah Loic | Software Engineering Portfolio</title>
+  <title>Noah Loic Kizungu | Software Engineering Portfolio</title>
   <style>
     :root {
       --primary: #1f3c88;
@@ -78,6 +78,17 @@
       max-width: 850px;
     }
 
+    .tag {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--dark);
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 0.15rem 0.5rem;
+      border-radius: 20px;
+      margin: 0.15rem 0.1rem 0.4rem;
+    }
+
     .skills-grid, .projects-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -129,7 +140,7 @@
 
   <header>
     <h1>Noah Loic Kizungu Shyaka</h1>
-    <p>Software Engineering student | Web Developer | Data & Systems Enthusiast</p>
+    <p>Software Engineering student | Full-Stack Developer | Data & ML Enthusiast</p>
   </header>
 
   <nav>
@@ -144,10 +155,10 @@
     <h2>About Me</h2>
     <p>
       I am a motivated Software Engineering student at the Adventist University of Central Africa (AUCA),
-      based in Kigali, Rwanda. I have hands-on experience in web development, database systems, and
-      Java-based application design. I enjoy solving real-world problems through technology, working
-      in team-oriented environments, and continuously expanding my skills in data analytics,
-      cybersecurity, and software architecture.
+      based in Kigali, Rwanda. I have hands-on experience in full-stack web development, desktop application
+      development with .NET, RESTful API design, machine learning competitions, and database systems. I enjoy
+      solving real-world problems through technology, working in team-oriented environments, and continuously
+      expanding my skills in data analytics, cybersecurity, and software architecture.
     </p>
   </section>
 
@@ -155,20 +166,28 @@
     <h2>Technical Skills</h2>
     <div class="skills-grid">
       <div class="card">
-        <h3>Programming</h3>
-        <p>C, Java, Python, PL/SQL</p>
+        <h3>Programming Languages</h3>
+        <p>C, Java, Python, C#, PL/SQL</p>
       </div>
       <div class="card">
-        <h3>Web Development</h3>
-        <p>HTML, CSS, Database-driven Web Apps</p>
+        <h3>Web & API Development</h3>
+        <p>HTML, CSS, React (JSX/Vite), Spring Boot (REST API), ASP.NET Core (Razor Pages & Web API)</p>
+      </div>
+      <div class="card">
+        <h3>Desktop Development</h3>
+        <p>.NET Windows Forms, ADO.NET, Role-Based Access Control, SQL Server</p>
       </div>
       <div class="card">
         <h3>Databases</h3>
-        <p>MS SQL, Oracle PL/SQL, Triggers, Packages</p>
+        <p>MS SQL Server, Oracle PL/SQL, Entity Framework Core (In-Memory), Triggers, Packages</p>
+      </div>
+      <div class="card">
+        <h3>Machine Learning & Data</h3>
+        <p>Python (Pandas, NumPy, Matplotlib), LightGBM, Optuna, Scikit-learn, Power BI</p>
       </div>
       <div class="card">
         <h3>Other Skills</h3>
-        <p>Networking Essentials, Agile Teamwork, Data Analytics, Cybersecurity Basics</p>
+        <p>Networking Essentials, Agile Teamwork, Cybersecurity Basics, ActiveMQ, Git</p>
       </div>
     </div>
   </section>
@@ -217,7 +236,73 @@
       </div>
 
       <div class="card">
+        <h3><a href="https://github.com/Noah-loic/Dotnet_HotelRoomBooking" target="_blank">Grand Haven Hotel Booking System</a></h3>
+        <span class="tag">ASP.NET Core</span><span class="tag">C#</span><span class="tag">SQL Server</span><span class="tag">Bootstrap</span>
+        <ul>
+          <li>Full-stack hotel management web app with customer, staff, and admin portals</li>
+          <li>OTP email verification via ActiveMQ + Gmail SMTP on every login</li>
+          <li>Live chat (customer ↔ staff) with file attachments, real-time polling</li>
+          <li>Online payments, event booking, Excel/PDF report export</li>
+          <li>Double-booking prevention, room availability, maintenance mode</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Inventory & Sales Management System</h3>
+        <span class="tag">.NET WinForms</span><span class="tag">C#</span><span class="tag">SQL Server</span>
+        <ul>
+          <li>Desktop retail system with role-based access (Admin, StockManager, SalesStaff)</li>
+          <li>CRUD for products, sales, users; stored procedures for analytics</li>
+          <li>Automatic stock deduction on sale with low-stock alerts</li>
+          <li>Daily/monthly reports exported to CSV and PDF</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>DownTown Clinic Management System</h3>
+        <span class="tag">.NET WinForms</span><span class="tag">C#</span><span class="tag">SQL Server</span>
+        <ul>
+          <li>Desktop clinic app with Doctor, Patient, and Manager roles</li>
+          <li>Appointment booking and management per role</li>
+          <li>Service management and patient registration</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Student Bank Wallet API</h3>
+        <span class="tag">ASP.NET Core Web API</span><span class="tag">C#</span><span class="tag">EF Core</span>
+        <ul>
+          <li>REST API for a university digital wallet system</li>
+          <li>Token-based auth with account lock after 3 failed PIN attempts</li>
+          <li>Deposit, pay, transfer between students, transaction history & daily summary</li>
+          <li>In-memory database with Entity Framework Core seed data</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3><a href="https://github.com/Noah-loic/OnlineCourseRegistration-SpringBootVersion-" target="_blank">Online Course Registration — Spring Boot</a></h3>
+        <span class="tag">Spring Boot</span><span class="tag">Java</span><span class="tag">REST API</span>
+        <ul>
+          <li>RESTful API for a full course registration platform</li>
+          <li>Manages Students, Courses, Departments, Instructors, Registrations, Payments, and Waitlist</li>
+          <li>Role-based auth, payment processing (methods &amp; statuses), and registration status tracking</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>NFL Draft Prediction — ML Competition</h3>
+        <span class="tag">Python</span><span class="tag">LightGBM</span><span class="tag">Optuna</span>
+        <ul>
+          <li>Predicted NFL draft probability from Combine stats (ROC AUC metric)</li>
+          <li>Iterated 7 model versions: baseline RandomForest → LightGBM + Optuna tuning</li>
+          <li>Best score: <strong>0.83523</strong> AUC (V6: V1+V3 features + 10-fold CV + ensemble)</li>
+          <li>Key learnings: data leakage detection, position z-scores, missing value flags</li>
+        </ul>
+      </div>
+
+      <div class="card">
         <h3>Home Maintenance Scheduling System</h3>
+        <span class="tag">PL/SQL</span><span class="tag">Oracle</span>
         <ul>
           <li>PL/SQL-based system with triggers, packages, and auditing</li>
           <li>Automates household maintenance tasks and scheduling</li>
@@ -226,6 +311,7 @@
 
       <div class="card">
         <h3>Advanced Online Shopping System</h3>
+        <span class="tag">Java</span><span class="tag">OOP</span>
         <ul>
           <li>Java OOP system using abstraction and encapsulation</li>
           <li>Transaction handling, validation, and report generation</li>
@@ -234,6 +320,7 @@
 
       <div class="card">
         <h3>Library Management System</h3>
+        <span class="tag">Java</span>
         <ul>
           <li>Catalog management, borrowing (14-day limit), and book purchases</li>
           <li>Modular service-based architecture</li>
@@ -242,6 +329,7 @@
 
       <div class="card">
         <h3>Vulnerability Assessment & Penetration Testing</h3>
+        <span class="tag">Security</span>
         <ul>
           <li>Hands-on VAPT on VulnHub servers (Venus & Napping)</li>
           <li>Security assessment and remediation recommendations</li>
@@ -270,7 +358,7 @@
   </section>
 
   <footer>
-    <p>© 2026 Noah Loic Kizungu Shyaka · Built with HTML & CSS</p>
+    <p>© 2025 Noah Loic Kizungu Shyaka · Built with HTML & CSS</p>
     <p><a href="#">Back to top</a></p>
   </footer>
 
